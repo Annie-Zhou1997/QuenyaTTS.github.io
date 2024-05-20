@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quenya TTS</title>
+    <style>
+        .header {
+            background-image: url('image/header.jpg');
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            padding-top: 70px; /* 调整标题的位置 */
+        }
+        .header h1 {
+            font-family: 'Arial', sans-serif; /* 改变字体 */
+            font-size: 3em; /* 改变字体大小 */
+        }
+        .header p {
+            margin-top: 2px; /* 添加间距 */
+            font-size: 1.2em; /* 改变字体大小 */
+            text-align: center; /* 使文本居中 */
+        }
+        .header a {
+            color: green; /* 改变链接颜色 */
+        }
+
+        .content {
+            font-family: 'Arial', sans-serif; /* 改变整个页面的字体 */
+            margin: 0 10%; /* 改变页面的左右边距 */
+        }
+
+        .content p {
+            font-size: 1.2em; /* 改变段落的字体大小 */
+            line-height: 1.5; /* 改变行间距 */
+        }
+        .audio-section {
+            margin-bottom: 40px; /* 添加底部间距 */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* 确保每列的宽度相等 */
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+            border: none;
+            width: 33.33%; /* 每个单元格占据表格宽度的三分之一 */
+            height: 100%; /* 确保单元格高度一致 */
+
+        }
+        .audio-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Quenya TTS</h1>
+        <p>This project is a Quneya Text-To-Speech (TTS) created using <a href="https://www.toucantts.com/">IMS-Toucan</a>.</p>
+        <p>It is a master's thesis project for the MSc in Voice Technology at the <a href="https://www.rug.nl/">University of Groningen</a>.</p>
+        <p>Here are some pre-generated audio demos.</p>
+    </div>
+    <div class="content">
+        <p>In this study, a 30-minute Quneya dataset was fine-tuned on Finnish, English, and IMS-Toucan's multilingual models. 
+            The Finnish and English models were trained from scratch using the CSS10 Finnish and LJSpeech datasets respectively. 
+            For the LJSpeech dataset, only 10:30 hours of data were used to match the duration of the CSS10 dataset.</p>
+
+        <div class="audio-section">
+            <h2>Finnish</h2>
+            <table>
+                <tr>
+                    <td><p>lampussakaan hukkaan mene, ja maksavathan ne metsätkin.<br>Even in a lamp, it doesn't go to waste, and forests do have value too.</td></p>
+                    <td><p>Mutta tuvassa poltetaan lamppua, sanoi isä.<br>But in the cottage, we burn a lamp, said the father.</td></p>
+                    <td><p>Olin nähnyt unta, että isä yöllä pani öljyä lamppuun, ja että se sitten koko päivän paloi.<br>I had dreamed that father put oil in the lamp at night, and that it then burned all day.</td></p>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/ref-fi-0018.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-fi-0018.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/fi-0018.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/ref-fi-0067.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-fi-0067.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/fi-0067.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/ref-fi-0070.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-fi-0070.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/fi-0070.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+
+        <div class="audio-section">
+            <h2>English</h2>
+            <table>
+                <tr>
+                    <td>
+                        <p>a very few years saw the birth of Roman character not only in Italy, 
+                            but in Germany and France.</p>
+                    </td>
+                    <td>
+                        <p>but his letters, though uninteresting and poor, 
+                            are not nearly so gross and vulgar as those of either the Italian or the Frenchman.</p>
+                    </td>
+                    <td>
+                        <p>but the general revival of the old forms has made no way in those countries.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/LJ001-0030.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-en-0030.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/en-0030.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/LJ001-0089.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-en-0089.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/en-0089.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Real Voice Reference:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/LJ001-0103.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Meta Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/meta-en-0103.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>Finnish Monolingual Model:</p>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="audio/en-0103.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                </tr>
+            </table>            
+        </div>
+    </div>
+</body>
+</html>
+
